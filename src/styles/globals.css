@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.register {
+  background-image: url(./../../public/regbackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "Futura Condensed Extra";
+  src: url(./../../public/Futura\ Condensed\ Extra\ Bold.otf);
+}
+@font-face {
+  font-family: "Futura XBlkCnIt BT";
+  src: url(./../../public/FuturaExtraBlackCondensedItalicBT.ttf);
+}
+@font-face {
+  font-family: "Futura MdCn BT";
+  src: url(./../../public/FuturaMediumCondensedBT.ttf);
+}
+
+.selected {
+  font-family: "Futura Condensed Extra";
+}
+.unselected {
+  font-family: "Futura XBlkCnIt BT";
+}
+input,
+.box {
+  font-family: "Futura MdCn BT";
+  bottom: 100%; /* Adjust this value as needed */
+  top: auto;
+}
