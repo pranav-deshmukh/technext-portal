@@ -216,8 +216,7 @@ function Register() {
                     placeholder="Select Country"
                     searchable
                     searchPlaceholder="Search countries"
-                    className={`box mx-auto w-[80%] rounded-md bg-[rgba(255,255,255,0.36)] placeholder:text-[#00000036]
-                      ${touched.country && errors.country ? "" : ""}`}
+                    className="box mx-auto w-[80%] rounded-md bg-[rgba(255,255,255,0.36)] placeholder:text-[#00000036]"
                   />
                   <div className="mx-auto w-[80%]">
                     <span className="text-sm text-red-500">
@@ -228,9 +227,9 @@ function Register() {
               </div>
               <button
                 type="submit"
-                className="mx-auto mt-6 w-[30%] rounded-lg bg-[#FF7A00] py-1.5 text-white"
+                className="mx-auto mt-6 w-[30%] rounded-full bg-[#FF7A00] text-2xl py-1.5 text-white"
               >
-                Register
+                REGISTER
               </button>
             </div>
           </form>
