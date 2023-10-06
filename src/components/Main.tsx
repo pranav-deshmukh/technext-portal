@@ -12,7 +12,7 @@ const Main = () => {
           <div className="flex justify-between items-center felx mx-4 ml-5 sm:ml-20 sm:w-[450px] w-[300px]">
             <Image
               className="felx sm:w-[52px] w-[38px]"
-              src={logo}
+              src={logo as HTMLImageElement}
               alt="logo"
             />
             <span className="felx uppercase sm:text-sm text-[8px] mx-3 sm:mx-5">

@@ -79,7 +79,7 @@ function Register() {
   return (
     <div className="register flex justify-center">
       <div className="hidden items-center justify-center lg:flex lg:w-[50%]">
-        <Image src={logo} alt="Icetite-logo" />
+        <Image src={logo as HTMLImageElement} alt="Icetite-logo" />
       </div>
       <div className="mx-8 my-auto h-fit w-[100%] rounded-md py-6 backdrop-blur-md backdrop-brightness-125 lg:w-[50%]">
         <div className="flex justify-center whitespace-pre pt-2 text-4xl text-white lg:text-5xl">
