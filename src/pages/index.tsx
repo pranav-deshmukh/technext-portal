@@ -1,3 +1,5 @@
+import JoinTeam from "@/pages/joinTeam";
+import Head from "next/head";
 import Link from "next/link";
 import { useFormik } from "formik";
 import { z } from "zod";

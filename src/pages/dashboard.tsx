@@ -2,12 +2,12 @@ import Image from "next/image";
 import logo from "../assets/logo-icon.svg";
 import {MdOutlineAccountCircle} from "react-icons/md"
 import {PiBellSimpleBold} from "react-icons/pi"
-import CSS from "./Main.module.css";
 
-const Main = () => {
+
+const Dashboard = () => {
   return (
     <>
-      <div className={`${CSS.background} text-white`}>
+      <div className={`teamInfo text-white`}>
         <div className="flex justify-between items-center w-full pt-6">
           <div className="flex justify-between items-center felx mx-4 ml-5 sm:ml-20 sm:w-[450px] w-[300px]">
             <Image
@@ -38,18 +38,18 @@ const Main = () => {
           </span>
           </div>
         </div>
-        <div className="flex flex-col justify-center sm:items-center  items-start md:py-[100px] py-[180px]">
-            <h1 className="text-7xl font-semibold">Welcome Tanvi</h1>
-            <h1 className="text-xl font-normal">To procede with Technext Expo 2024, pick one.</h1>
+        <div className="flex flex-col justify-center sm:items-center md:py-[100px] py-[100px] text-center">
+            <h1 className="text-7xl font-semibold ">Welcome Tanvi</h1>
+            <h1 className="text-xl font-normal ">To procede with Technext Expo 2024, pick one.</h1>
         </div>
 
-        <div className="uppercase flex justify-center sm:items-center  items-start md:py-[10px] py-[180px]">
-            <div className="h-[25vh] w-[30%] bg-white text-[#FF7A00] flex items-center justify-center rounded-3xl"><h1 className="text-5xl font-bold">Create Team</h1></div>
+        <div className="uppercase flex justify-center sm:items-center  md:py-[10px] py-[10px]">
+            <div className="md:h-[25vh] sm:h-[20vh] w-[30%] bg-white text-[#FF7A00] flex items-center justify-center rounded-3xl"><h1 className="md:text-5xl text-3xl text-center font-bold">Create Team</h1></div>
             <div className="h-[18vh] w-[2.3px] rounded-3xl mx-10 bg-white"></div>
-            <div className="h-[25vh] w-[30%] bg-white text-[#FF7A00] flex items-center justify-center rounded-3xl"><h1 className="text-5xl font-bold">Join Team</h1></div>
+            <div className="md:h-[25vh] w-[30%] sm:h-[20vh] bg-white text-[#FF7A00] flex items-center justify-center rounded-3xl"><h1 className="md:text-5xl text-3xl font-bold text-center ">Join Team</h1></div>
         </div>
-        <p className="uppercase flex justify-center sm:items-center text-gray-400 items-start md:py-[50px] py-[180px]">*Please review the regulation once before choosing any option</p>
-        {/* <div className="flex justify-center xl:hidden mb-4">
+        <p className="uppercase flex justify-center sm:items-center text-center text-gray-400 md:py-[50px] py-[18px]">*Please review the regulation once before choosing any option</p>
+        {/* <div className="flex justify-center xl:hidden m b-4">
           <span
             className="flex items-center uppercase px-4 py-1.5 sm:py-2 sm:text-lg text-[10px] bg-[#FF7A00] sm:rounded-lg rounded-md hover:bg-[#ff9837] hover:text-white hover:font-[400] active:bg-[#FF7A00]"
           >
@@ -60,4 +60,4 @@ const Main = () => {
     </>
   );
 };
-export default Main;
+export default Dashboard;

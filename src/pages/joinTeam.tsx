@@ -2,13 +2,13 @@ import Image from "next/image";
 import logo from "../assets/logo-icon.svg";
 import {MdOutlineAccountCircle, MdLogin} from "react-icons/md"
 import {PiBellSimpleBold} from "react-icons/pi"
-import CSS from "./joinTeam.module.css";
 import {BsArrowLeftSquare} from "react-icons/bs"
+
 
 const Main = () => {
   return (
     <>
-      <div className={`${CSS.background} text-white`}>
+      <div className={`teamInfo text-white`}>
         <div className="flex justify-between items-center w-full pt-6">
           <div className="flex justify-between items-center felx mx-4 ml-5 sm:ml-20 sm:w-[450px] w-[300px]">
             <Image
@@ -41,14 +41,14 @@ const Main = () => {
         </div>
         
 
-        <div className="uppercase flex justify-center sm:items-center  items-start md:py-[70px] py-[180px]">
+        <div className="uppercase flex justify-center sm:items-center  items-start md:py-[70px] pt-[50px]">
             <div className="h-[60vh] w-[70%] bg-[#898989] text-white flex flex-col items-center justify-evenly rounded-3xl relative">
               <BsArrowLeftSquare className="text-4xl absolute top-6 left-6"/>
               <h1 className="text-5xl font-bold">Join Team</h1>
               <form action="">
                 <div className="">
                   <input
-                    className="w-[80vh] py-[14px] px-[33px] text-[#D9D9D999] bg-[#4b4b4b] rounded-md text-[22px] font-semibold"
+                    className="w-[50vw] py-[14px] px-[33px] text-[#D9D9D999] bg-[#4b4b4b] rounded-md md:text-[22px] text-[10px] font-semibold"
                     id="email"
                     type="text"
                     placeholder="Enter The Team Code"               
@@ -64,7 +64,7 @@ const Main = () => {
             </div>
            
         </div>
-        <p className="uppercase flex justify-center sm:items-center text-gray-400 items-start md:py-[0px] py-[180px]">*Please review the regulation once before choosing any option</p>
+        <p className="uppercase flex justify-center sm:items-center text-gray-400 text-center items-start md:py-[0px] pt-8  " >*Please review the regulation once before choosing any option</p>
         
       </div>
     </>
