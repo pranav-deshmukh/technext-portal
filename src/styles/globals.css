@@ -29,6 +29,10 @@
   font-family: "Futura MdCn BT";
   src: url(./../../public/FuturaMediumCondensedBT.ttf);
 }
+@font-face {
+  font-family: "Futura BdCn BT";
+  src: url(./../../public/FuturaBoldCondensedBT.ttf);
+}
 
 .selected {
   font-family: "Futura Condensed Extra";
@@ -41,4 +45,7 @@ input,
   font-family: "Futura MdCn BT";
   bottom: 100%; /* Adjust this value as needed */
   top: auto;
+}
+button, .bdcn{
+    font-family: "Futura BdCn BT";
 }
