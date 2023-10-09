@@ -6,8 +6,9 @@ import Modal from "react-modal";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { PiBellSimpleBold } from "react-icons/pi";
-import {BiExit} from "react-icons/bi";
+import { BiExit } from "react-icons/bi";
 import { useState } from "react";
+import Link from "next/link";
 import CSS from "./createteam.module.css";
 
 const CreateTeam = () => {
@@ -155,18 +156,23 @@ const CreateTeam = () => {
               <h1 className="bdcn py-4 text-center text-3xl text-white md:text-4xl">
                 HERE&apos;S YOUR TEAM CODE
               </h1>
-              <div className="mx-auto my-4 flex flex-col md:flex-row w-[100%] md:w-[75%] md:justify-evenly rounded-md bg-[#0000005e] py-3 text-white 2xl:mx-24">
-                <div className="bdcn text-lg md:text-2xl self-center">Your Team Code</div>
-                <div className="bdcn rounded-md bg-[#00000075] px-3 py-1 text-lg md:text-2xl self-center">
+              <div className="mx-auto my-4 flex w-[100%] flex-col rounded-md bg-[#0000005e] py-3 text-white md:w-[75%] md:flex-row md:justify-evenly 2xl:mx-24">
+                <div className="bdcn self-center text-lg md:text-2xl">
+                  Your Team Code
+                </div>
+                <div className="bdcn self-center rounded-md bg-[#00000075] px-3 py-1 text-lg md:text-2xl">
                   # 123456
                 </div>
               </div>
-              <div className="box mt-10 text-sm md:text-lg text-center text-white">
+              <div className="box mt-10 text-center text-sm text-white md:text-lg">
                 *Use this code to invite people
               </div>
               <div className="flex justify-center">
-                <button className="mt-8 w-[40%] rounded-md bg-[#FF7A00] py-1.5 sm:py-1 md:py-2 text-lg text-white text-sm sm:text-lg md:text-2xl flex justify-center">
-                  <span>CONTINUE TO DASHBOARD</span><BiExit className="mt-1 hidden min-[1123px]:flex"/>
+                <button className="mt-8 flex w-[40%] justify-center rounded-md bg-[#FF7A00] py-1.5 text-lg text-sm text-white sm:py-1 sm:text-lg md:py-2 md:text-2xl">
+                  <Link href="/teamInfo">
+                    <span>CONTINUE TO DASHBOARD</span>
+                  </Link>
+                  <BiExit className="mt-1 hidden min-[1123px]:flex" />
                 </button>
               </div>
             </Modal>

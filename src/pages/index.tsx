@@ -6,8 +6,10 @@ import { z } from "zod";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 import Image from "next/image";
 import logo from "./../assets/logo.svg";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const userSchema = z.object({
     email: z
       .string({
@@ -33,12 +35,13 @@ export default function Home() {
     },
     validationSchema: toFormikValidationSchema(userSchema),
     validateOnChange: true,
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       const send = {
         email: values.email,
         password: values.password,
       };
       console.log(send);
+      await router.push('/dashboard');
     },
   });
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
